@@ -1,7 +1,15 @@
 <script>
+	// @ts-nocheck
+
 	import CardDetailsForm from './(components)/cardDetailsForm.svelte';
 	import CardDetails from './(components)/cardDetails.svelte';
 	import FormSuccess from './(components)/formSuccess.svelte';
+
+	let detailsSend = false;
+
+	const handleDetailsSend = (event) => {
+		detailsSend = event.detail.valid;
+	};
 </script>
 
 <aside>
@@ -15,8 +23,8 @@
 
 <main>
 	<div class="content">
-		{#if false}
-			<CardDetailsForm />
+		{#if !detailsSend}
+			<CardDetailsForm on:detailsSend={handleDetailsSend} />
 		{:else}
 			<FormSuccess />
 		{/if}
@@ -44,8 +52,6 @@
 		--clr-Light-grayish-violet: hsl(270, 3%, 87%);
 		--clr-Dark-grayish-violet: hsl(279, 6%, 55%);
 		--clr-Very-dark-violet: hsl(278, 68%, 11%);
-
-		--size-desktop: 425px;
 	}
 
 	:global(body) {

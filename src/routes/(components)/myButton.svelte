@@ -12,4 +12,7 @@
 		width: 100%;
 		font-family: 'Space Grotesk', sans-serif;
 	}
+	:active {
+		opacity: 0.8;
+	}
 </style>
