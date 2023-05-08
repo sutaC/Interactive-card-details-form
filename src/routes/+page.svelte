@@ -4,10 +4,10 @@
 </script>
 
 <aside>
-	<div class="card card-back">
-		<!-- <CardDetails orientation={'back'} />    -->
+	<div class="card-back">
+		<CardDetails orientation={'back'} />
 	</div>
-	<div class="card card-front">
+	<div class="card-front">
 		<CardDetails orientation={'front'} />
 	</div>
 </aside>
@@ -64,6 +64,20 @@
 		background-size: cover;
 
 		min-height: 30vh;
+
+		position: relative;
+	}
+
+	.card-front {
+		position: absolute;
+		left: 5%;
+		bottom: -31%;
+	}
+
+	.card-back {
+		position: absolute;
+		right: 0;
+		top: 15%;
 	}
 
 	main {
