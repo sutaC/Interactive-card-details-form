@@ -1,3 +1,7 @@
+<script>
+	import MyButton from './myButton.svelte';
+</script>
+
 <form>
 	<div>
 		<label for="name">Cardholder Name</label>
@@ -23,12 +27,11 @@
 		</div>
 	</div>
 
-	<button>Confirm</button>
+	<MyButton>Confirm</MyButton>
 </form>
 
 <style>
-	input,
-	button {
+	input {
 		font-family: 'Space Grotesk', sans-serif;
 	}
 
@@ -66,15 +69,5 @@
 	}
 	::placeholder {
 		color: var(--clr-Dark-grayish-violet);
-	}
-
-	button {
-		background-color: var(--clr-Very-dark-violet);
-		border: none;
-		color: var(--clr-White);
-		padding: 0.8rem;
-		font-size: 1rem;
-		border-radius: 0.5rem;
-		margin: 0;
 	}
 </style>

@@ -1,6 +1,7 @@
 <script>
 	import CardDetailsForm from './(components)/cardDetailsForm.svelte';
 	import CardDetails from './(components)/cardDetails.svelte';
+	import FormSuccess from './(components)/formSuccess.svelte';
 </script>
 
 <aside>
@@ -13,10 +14,10 @@
 </aside>
 
 <main>
-	{#if true}
+	{#if false}
 		<CardDetailsForm />
 	{:else}
-		Thank you! We've added your card details Continue
+		<FormSuccess />
 	{/if}
 </main>
 

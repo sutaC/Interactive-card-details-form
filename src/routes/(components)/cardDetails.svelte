@@ -45,6 +45,8 @@
 		background: url('$lib/images/bg-card-back.png');
 		background-size: contain;
 		background-repeat: no-repeat;
+		background-position: center;
+
 		position: relative;
 	}
 
@@ -67,6 +69,7 @@
 		background-repeat: no-repeat;
 		padding: 1rem;
 		box-sizing: border-box;
+		background-position: center;
 
 		display: flex;
 		justify-content: space-between;
@@ -79,6 +82,7 @@
 		background: url('$lib/images/card-logo.svg');
 		background-size: contain;
 		background-repeat: no-repeat;
+
 		width: 100%;
 		height: 25%;
 	}
