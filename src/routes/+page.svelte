@@ -14,11 +14,13 @@
 </aside>
 
 <main>
-	{#if false}
-		<CardDetailsForm />
-	{:else}
-		<FormSuccess />
-	{/if}
+	<div class="content">
+		{#if false}
+			<CardDetailsForm />
+		{:else}
+			<FormSuccess />
+		{/if}
+	</div>
 </main>
 
 <footer>
@@ -42,6 +44,8 @@
 		--clr-Light-grayish-violet: hsl(270, 3%, 87%);
 		--clr-Dark-grayish-violet: hsl(279, 6%, 55%);
 		--clr-Very-dark-violet: hsl(278, 68%, 11%);
+
+		--size-desktop: 425px;
 	}
 
 	:global(body) {
@@ -72,13 +76,13 @@
 	.card-front {
 		position: absolute;
 		left: 5%;
-		bottom: -31%;
+		bottom: -30%;
 	}
 
 	.card-back {
 		position: absolute;
-		right: 0;
-		top: 15%;
+		right: 5%;
+		top: 10%;
 	}
 
 	main {
@@ -88,6 +92,51 @@
 		justify-content: end;
 		flex-direction: column;
 		padding: 3rem 1.5rem;
+	}
+
+	/* Desktop view  */
+
+	@media (width >= 1000px) {
+		:global(body) {
+			display: flex;
+		}
+
+		:global(body) > * {
+			height: 100%;
+		}
+
+		aside {
+			width: 30%;
+			background: url('$lib/images/bg-main-desktop.png');
+		}
+
+		main {
+			width: 70%;
+		}
+
+		.content {
+			max-width: 40%;
+		}
+
+		.card-front {
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+
+			top: 25%;
+			left: 55%;
+		}
+
+		.card-back {
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+
+			top: 55%;
+			left: 70%;
+		}
 	}
 
 	/* / Main styles */

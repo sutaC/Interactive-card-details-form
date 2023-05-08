@@ -29,10 +29,12 @@
 	/* General styles */
 
 	.card {
+		--size: 18rem;
+
 		margin: 0;
 
-		width: clamp(50vw, 30rem, 75vw);
-		height: clamp(15vh, 20rem, 22vh);
+		width: var(--size);
+		height: calc(var(--size) / 2);
 	}
 
 	p {
@@ -67,7 +69,7 @@
 		background: url('$lib/images/bg-card-front.png');
 		background-size: contain;
 		background-repeat: no-repeat;
-		padding: 1rem;
+		padding: 1rem 2rem;
 		box-sizing: border-box;
 		background-position: center;
 
@@ -88,8 +90,8 @@
 	}
 
 	.cardNumber {
-		font-size: 1.1rem;
-		letter-spacing: 0.15rem;
+		font-size: 1rem;
+		letter-spacing: 0.1rem;
 		margin: 0.7rem 0;
 	}
 

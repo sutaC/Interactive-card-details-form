@@ -43,12 +43,12 @@
 		text-transform: uppercase;
 		font-size: 2rem;
 		letter-spacing: 0.3rem;
-		margin: 0.5rem 0;
+		margin: 2rem 0 0.5rem 0;
 	}
 
 	p {
 		color: var(--clr-Dark-grayish-violet);
 		font-size: 1.1rem;
-		margin: 0.5rem 0;
+		margin: 0.5rem 0 2rem 0;
 	}
 </style>
